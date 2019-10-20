@@ -6,7 +6,7 @@
 <title>My Resume</title>
 <script src="script.js"></script>
 
-<body>
+<body onload="changeColor()">
     <h1>Resume</h1>
 
 
@@ -14,28 +14,35 @@
 
     </div>
 
-    <div class="main">
-        <div class="inline">
+    <div class="main" id="colormain">
+        <div class="inline" onclick="changeName()">
             <h3>ชื่อ-นามสกุล : </h3>
-            <span>นาย พรเทพ น้ำใจสุข</span>
+            <span id="name">นาย พรเทพ น้ำใจสุข</span>
             <img src="image/getstudentimageftp.jpg" alt="My pic">
 
         </div>
+        <br>
         <div class="inline">
             <h3>ชื่อเล่น : </h3>
             <span>ไมค์</span>
         </div>
+        <br>
         <div class="inline">
             <h3>การศึกษา : </h3>
             <span>ปริญญาตรี สาขาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยราชภัฏนครปฐม</span>
         </div>
         <div>
+
             <h3>ความสามารถพิเศษ</h3>
-            <ul style="list-style-type:disc;">
-                <li>HTML</li>
-                <li>PHP</li>
-                <li>JAVA</li>
-            </ul>
+            <form>
+                <input type="text" id="myInput">
+                <button type="button" onclick="newElement()">add skill</button>
+                <ul style="list-style-type:disc;" id="myUL">
+                    <li>HTML</li>
+                    <li>PHP</li>
+                    <li>JAVA</li>
+                </ul>
+            </form>
         </div>
 
         <div class="inline">
