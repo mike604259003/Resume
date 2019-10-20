@@ -1,0 +1,67 @@
+body {
+    background-image: url('image/pexels-photo-1037995.jpeg');
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Kanit', sans-serif;
+}
+
+* {
+    box-sizing:border-box;
+  }
+  
+  .left {
+    background-color:transparent;
+    padding:20px;
+    float:left;
+    width:10%; 
+  }
+  
+  .main {
+    background-color:#f1f1f1;
+    padding:20px;
+    float:left;
+    width:80%;
+    padding-left: 150px; 
+    padding-top: 50px;
+    padding-bottom: 200px;
+    margin-bottom: 100px;
+  }
+  
+  .right {
+    background-color:transparent;
+    padding:20px;
+    float:left;
+    width:10%; 
+  }
+  
+  
+  @media screen and (max-width:800px) {
+    .left, .main, .right {
+      width:100%; 
+    }
+  }
+
+  h1{
+      margin-top: 50px;
+      text-align: center;
+  }
+
+  .inline h3 { 
+    display: inline;
+  }
+  .inline img{
+      float: right;
+  }
+
+  img{
+      margin-top: 50px;
+    margin-right: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
